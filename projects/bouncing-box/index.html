@@ -60,18 +60,48 @@
 			/////////////////// YOUR CODE BELOW HERE /////////////////////////
 			//////////////////////////////////////////////////////////////////
 			
-			// TODO 2 - Variable declarations 
-			
+			// TODO 2 - Variable declarations
+			var myVariable 	
+			function moveBoxTo(newPositionX) {
 
-			
+         // When you first create the Variable...
+var positionX = 0;
+
+// during update... 
+// Frame 1
+positionX = 0 + 10;         // positionX = 10
+moveBoxTo(positionX);
+
+// Frame 2
+positionX = 10 + 10;        // positionX = 20
+moveBoxTo(positionX);
+
+// The Box is Clicked
+positionX = 0;              // positionX = 0
+
+// back to update...
+// Frame 3
+positionX = 0 + 10;         // positionX = 10
+moveBoxTo(positionX);
+
+// Frame 4
+positionX = 10 + 10;         // positionX = 20
+moveBoxTo(positionX);
+
+// so on...
+
+            };
 			/* 
 			This Function will be called 20 times/second. Each time it is called,
 			it should move the Box to a new location. If the box drifts off the screen
 			turn it around! 
 			*/
 			function update() {
-				
+		    var myVariable = someValue; 
+			function update() {
+              moveBoxTo(positionX);
 
+            };
 			};
 
 			/* 
@@ -81,10 +111,34 @@
 			*/
 			function handleBoxClick() {
 				
+			// When you first create the Variable...
+var positionX = 0;
+
+// during update... 
+// Frame 1
+positionX = 0 + 10;         // positionX = 10
+moveBoxTo(positionX);
+
+// Frame 2
+positionX = 10 + 10;         // positionX = 20
+moveBoxTo(positionX);
+
+// Frame 3
+positionX = 20 + 10;         // positionX = 30
+moveBoxTo(positionX);
+
+// Frame 4
+positionX = 30 + 10;         // positionX = 40
+moveBoxTo(positionX);
+
+// so on...
+
+
 
 
 			};
-		})();
+
+
 	</script>
 </body>
 </html>
